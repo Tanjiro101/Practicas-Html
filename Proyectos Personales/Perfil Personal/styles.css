@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil {
+    max-width: 700px;
+    background-color: #48ee;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #000a;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.perfil__img {
+    background-image: url(foto-perfil.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 200px;
+    border-radius: 12px 0 0 12px;
+    
+}
+
+.perfil:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0 25px #fff9;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacto__nombre {
+    text-wrap: balance;
+}
+
+.contacto__resumen {
+    text-wrap: pretty;
+    margin: 0;
+}
+
+.contacto__lista {
+    list-style: none;
+    padding: 0;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.lista__enlace {
+    display: inline-block;
+    transition: transform .3s;
+}
+
+.lista__link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.lista__enlace:hover {
+    transform: translateY(-5px);
+}

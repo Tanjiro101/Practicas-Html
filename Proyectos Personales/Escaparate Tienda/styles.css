@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #444;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.escaparate {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.tarjeta {
+    max-width: 300px;
+    min-height: 400px;
+    background-color: #2229;
+    box-shadow: 0 0 15px #fff9;
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: box-shadow .24s, background-color .3s;
+}
+
+.oferta {
+    position: absolute;
+    background-color: #e33;
+    padding: 5px;
+    letter-spacing: 3px;
+    border-radius: 3px;
+    right: 0;
+    top: 25px;
+    z-index: 10;
+    transform: rotateZ(40deg);
+}
+
+.tarjeta:hover {
+    box-shadow: 0 0 30px #fff9;
+    background-color: #222c;
+}
+
+.tarjeta__img {
+    background-image: url(gorra-ejemplo.webp);
+    background-position: center;
+    background-size: contain;
+    width: 125px;
+    height: 125px;
+    filter: drop-shadow(0 0 10px #0009);
+}
+
+.tarjeta__nombre {
+    font-weight: 500;
+}
+
+.tarjeta__precio {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.tarjeta__precio--anterior {
+    font-size: 12px;
+    color: #e33d;
+    text-decoration: line-through;
+}
+
+.tarjeta__precio--actual {
+    color: #fff;
+    font-weight: 600;
+}
+
+.tarjeta__descripcion {
+    max-height: 5rem;
+    max-width: 100%;
+    margin: 0 10px 15px 10px;
+    text-wrap: pretty;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.tarjeta__boton {
+    letter-spacing: 3px;
+    padding: 7px 16px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 10px #0009;
+        margin-bottom: 20px;
+    transition: background-color .3s, transform .2s, box-shadow .2s, color .2s;
+}
+
+.tarjeta__boton:hover {
+    transform: translateY(-3px);
+    background-color: #00f9;
+    box-shadow: 0 0 7px #fff9;
+    color: #fff;
+}
