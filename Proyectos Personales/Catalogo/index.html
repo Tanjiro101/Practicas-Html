@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Inicia seccion header -->
+
+    <header class="header">
+        <div class="header__logo"></div>
+        <ul class="header__navegacion">
+            <li class="header__lista"><a href="index.html" class="header__link">Inicio</a></li>
+            <li class="header__lista"><a href="#catalogo" class="header__link">Catalogo</a></li>
+            <li class="header__lista"><a href="#contacto" class="header__link">Contacto</a></li>
+        </ul>
+    </header>
+
+    <!-- Inicia seccion catalogo -->
+
+    <section class="catalogo" id="catalogo">
+        <div class="catalogo__escaparate">
+            <section class="catalogo__tarjeta">
+                <div class="catalogo__imagen"></div>
+                <h2 class="catalogo__nombre">Life Lived</h1>
+                <div class="catalogo__descripcion">Primer drop de new crown</div>
+                <button class="catalogo__boton">Comprar</button>
+            </section>
+            <section class="catalogo__tarjeta">
+                <div class="catalogo__imagen"></div>
+                <h2 class="catalogo__nombre">The king</h1>
+                <div class="catalogo__descripcion">Segundo drop de new crown</div>
+                <button class="catalogo__boton">Comprar</button>
+            </section>
+            <section class="catalogo__tarjeta">
+                <div class="catalogo__imagen"></div>
+                <h2 class="catalogo__nombre">Just a cap</h1>
+                <p class="catalogo__descripcion">Solo es una gorra</p>
+                <button class="catalogo__boton">Comprar</button>
+            </section>
+            <section class="catalogo__tarjeta">
+                <div class="catalogo__imagen"></div>
+                <h2 class="catalogo__nombre">More than a cap</h1>
+                <p class="catalogo__descripcion">Mas que una gorra</p>
+                <button class="catalogo__boton">Comprar</button>
+            </section>
+            <section class="catalogo__tarjeta">
+                <div class="catalogo__imagen"></div>
+                <h2 class="catalogo__nombre">Crown</h1>
+                <p class="catalogo__descripcion">I´m... The king?</p>
+                <button class="catalogo__boton">Comprar</button>
+            </section>
+            <section class="catalogo__tarjeta">
+                <div class="catalogo__imagen"></div>
+                <h2 class="catalogo__nombre">Break the limit</h1>
+                <p class="catalogo__descripcion">Es suficiente?</p>
+                <button class="catalogo__boton">Comprar</button>
+            </section>
+        </div>
+    </section>
+
+    <!-- Inicia seccion de formulario -->
+
+    <section class="contacto" id="contacto">
+        <form class="contacto__formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="contacto__input" id="nombre">
+            <label for="correo">Correo</label>
+            <input type="email" class="contacto__input" id="correo">
+            <label for="comentario">Comentario</label>
+            <textarea rows="3" draggable="false" class="contacto__input" id="comentario"></textarea>
+            <button type="submit" class="contacto__boton">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
